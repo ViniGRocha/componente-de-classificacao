@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background-image: linear-gradient(to right top, #181E26, #1A212B, #1C232D, #202731);
+    width: 450px;
+    height: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+a > img{
+    width: 50px;
+    padding: 15px;
+    margin-top: 0px;
+    border-radius: 100%;
+    background-color:  hsl(213, 19%, 18%);
+}
+
+.text{
+    color: hsl(0, 0%, 100%);   
+}
+
+.text > h1{
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.text p{
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.numbers{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.numbers a{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 17px;
+    border-radius: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    justify-content: center;
+    color:hsl(216, 12%, 54%) ;
+    background-color: hsl(213, 19%, 18%);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+
+}
+
+form > input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    color: hsl(0, 0%, 100%);
+    background-color:hsl(25, 97%, 53%);
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.numbers :hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+form :hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+  
+.selecionado {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 17px;
+    border-radius: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    justify-content: center;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Classificação</title>
+</head>
+<body>
+    <div class="container">
+        <a href="/">
+            <img src="/images/icon-star.svg" alt="uma estrela laranja">
+        </a>
+        
+        <div class="text">
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+
+        <div class="numbers">
+            <a href="javascript:void(0)" id="number1" class="selecionado" onclick="alterarCor(1)" id="number1">1</a>
+            <a href="javascript:void(0)"class="selecionado" onclick="alterarCor(2)" id="number2" >2</a>
+            <a href="javascript:void(0)" class="selecionado" onclick="alterarCor(3)" id="number3" >3</a>
+            <a href="javascript:void(0)" class="selecionado" onclick="alterarCor(4)" id="number4" >4</a>
+            <a href="javascript:void(0)" class="selecionado" onclick="alterarCor(5)" id="number5">5</a>
+        </div>
+        
+        <p>You selected <span id="rating"></span>out of 5</p>
+
+        <form action="">
+            <input type="submit" value="SUBMIT" onclick='avaliar()'>
+        </form>
+
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
